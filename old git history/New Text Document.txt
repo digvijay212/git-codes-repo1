@@ -1,0 +1,76 @@
+git config--global user.name digvijay
+git config --user.name digvijay
+git config --global user.name digvijay
+[200~
+~ git config --global user.email digvijaypawar@gmail.com
+ git config --global user.name 
+git config --global color.ui auto
+git status
+git add[vicky.txt]
+git add vicky
+git add "vicky"
+git status
+git init
+git init
+git status
+git add<Slack.lnk>
+git status
+git add "notes'
+git add "notes"
+git status
+git status
+git init
+git status
+git add "notes"
+git status
+git commit -m "my number"
+git cd
+git commit "notes"
+git config --global user.email
+git config --global user.name digvijay
+ git config --global user.name
+ git config --global user.email digvijaypawarb@gmail.com
+ git config --global user.email
+git status
+git add "notes1"
+git status
+git add "notes2"
+git status
+git commit -m "my image"
+git status
+git add.
+git add -A
+git status
+git commit -m "full stack"
+git rm --cached "notes2"
+git rm --cached "notes2"
+git log
+git rm --cached "full stack"
+git branch d-branch
+git status
+git status
+git log
+git init
+git status
+git status
+git status
+git --global user.name
+git init
+git status
+git add "git1"
+git status
+git commit m-"ss"
+git commit "git1"
+git status
+git commit -m "ss"
+git log
+cd
+git add.
+git add -A
+git init
+git status
+git status
+git add "txt1"
+git status
+git commit -m "dsa armstrong"
+git log

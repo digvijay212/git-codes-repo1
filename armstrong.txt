@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static int countNumberOfDigit(int n){
+        int count = 0;
+        while(n>0){
+            n/=10;
+            count++;
+        }
+        return count; 
+    }
+    public static int checkArmstrongNumber(int n){
+        int orignalnumber = n;
+        int digit = countNumberOfDigit(n);
+        int sum = 0;
+        int result =0;
+        while(n>0){
+            int lastDigit = n%10;
+            n/=10;
+            sum = sum + (int) Math.pow(lastDigit, digit);
+        }
+        if(sum == orignalnumber){
+            result = orignalnumber;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        for(int i=a; i<=b; i++){
+           int num = checkArmstrongNumber(i);
+            if(num>0){
+                System.out.println(num);
+            }
+        } 
+    }
+}
