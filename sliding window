@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void sliding(int arr[],int n,int k){
+        for(int i=0;i<n-k+1;i++){
+            int max=Integer.MIN_VALUE;
+            for(int j=i;j<i+k;j++){
+              if(max<arr[j]){
+                max=arr[j];
+            }
+            }
+            
+             System.out.print(max+" ");
+        }
+       
+        
+    }
+
+    public static void main(String[] args) {
+        Scanner scn=new Scanner (System.in);
+         int n=scn.nextInt();
+        
+        int arr[]=new int[n];
+        
+        for(int i=0;i<n;i++){
+            arr[i]=scn.nextInt();
+        }
+        int k=scn.nextInt();
+        sliding(arr,n,k);
+
+    }
+}
