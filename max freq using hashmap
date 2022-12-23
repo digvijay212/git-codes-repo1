@@ -1,0 +1,40 @@
+i/p= abcdaccd
+o/p= c
+
+
+code ->
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc =new Scanner(System.in);
+        String str =sc.nextLine();
+        
+       HashMap<Character , Integer>hm=new HashMap<>();
+        int n =str.length();
+        for(int i=0;i<n;i++){
+            char key =str.charAt(i);
+            if(hm.containsKey(key)){
+                int freq=hm.get(key);
+                freq++;
+                hm.put(key,freq);
+            }
+            else{
+                hm.put(key,1);
+            }
+        }
+        int maxc=0;
+        char ans=' ';
+        for (Map.Entry<Character, Integer>val:hm.entrySet()){
+            if(maxc<val.getValue()){
+                maxc=val.getValue();
+                ans=val.getKey();
+            }
+        }
+        System.out.println(ans);
+        }
+}
+        
+        
