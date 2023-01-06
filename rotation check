@@ -1,0 +1,39 @@
+ public static String rotationcheck(int arr[][],int n){
+              
+    for(int row=0;row<n;row++){
+        int val=arr[row][0];
+        val++;
+        if(val>n){
+            val=1;
+    }
+        for(int col=1;col<n;col++){
+            if(arr[row][col]!=val){
+                return "NO";
+            }
+            val++;
+            if(val>n){
+            val=1;
+        }
+        }
+    }
+    
+            return "YES";
+        }
+          
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+int arr[][]=new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+            String ans =rotationcheck(arr,n);
+            System.out.println(ans);
+            
+        
+    }
+}
