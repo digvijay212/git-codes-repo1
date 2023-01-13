@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+       
+        String str1=sc.nextLine();
+         String str2=sc.nextLine();
+        int n=str1.length();
+    
+        
+        String ans="";
+        for(int i=0;i<n;i++){
+            ans+=""+str1.charAt(i)+str2.charAt(i);
+        }
+        System.out.println(ans);
+    }
+}
