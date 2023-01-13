@@ -1,0 +1,24 @@
+ public static void main(String[] args) {
+
+        Scanner scn=new Scanner(System.in);
+        String str=scn.nextLine();
+         int sum=0;
+        for(int i=0;i<str.length();i++){
+            for(int j=i;j<str.length();j++){
+              String ans="";
+            
+                for(int k=i;k<=j;k++){
+                    ans+=str.charAt(k);
+                }
+                
+                sum = sum+Integer.parseInt(ans);
+                // sum+=Integer.parseInt(s);
+            }
+        }
+        
+        System.out.print(sum);
+        
+    
+       
+    }
+}
