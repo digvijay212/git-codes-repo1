@@ -1,0 +1,39 @@
+ public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int n=str.length();
+        int count=1;
+        int maxcount=1;
+        
+        for(int i=0;i<n-1;i++){
+          if(str.charAt(i)==str.charAt(i+1)){
+              count++;
+          }
+             else{
+                 count=1;
+             }   
+            maxcount=Math.max(count , maxcount);
+            
+        }
+        System.out.print(maxcount);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//////
+Sample Input 0
+
+abbcccddddeeeeeffgghheecccc
+
+Sample Output 0
+
+5
+
