@@ -1,0 +1,41 @@
+ public static int countSubstr(String str, int n){
+        int ans=0;
+        int i=0;
+        while(i<n){
+            int count_0=0;
+            int count_1=0;
+            if(str.charAt(i)=='0'){
+                while(i<n && str.charAt(i)=='0'){
+                    count_0++;//2
+                    i++;
+                }
+                int j=i;
+                while(j<n && str.charAt(j)=='1'){
+                    count_1++;
+                    j++;
+                }
+            }else{
+                while(i<n && str.charAt(i)=='1'){
+                    count_1++;
+                    i++;
+                }
+                int j=i;
+                while(j<n && str.charAt(j)=='0'){
+                    count_0++;
+                    j++;
+            }
+        }
+            ans+=Math.min(count_0, count_1);
+            
+    }
+        return ans;
+        
+    }
+
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int n = str.length();
+        System.out.println(countSubstr(str, n));
+    }
+}
