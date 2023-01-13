@@ -1,0 +1,37 @@
+public static void  mergesortedarry(int arr1[],int n,int arr2[],int m){
+            int ansarry[]=new int[n+m];
+            int k =0;
+            for(int val:arr1){          
+                ansarry[k]=val;
+                k++;
+            }
+            for(int val:arr2){           
+                ansarry[k]=val;
+                k++;
+            }
+            Arrays.sort(ansarry);
+            for(int val:ansarry){
+                System.out.print(val+" ");
+            }
+        }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr1[] = new int[n];
+        
+        for(int i=0;i<n;i++){
+            arr1[i]=  sc.nextInt();
+        }
+         int m = sc.nextInt();
+        int arr2[] = new int[m];    
+        
+        for(int i=0;i<m;i++){
+            arr2[i]=  sc.nextInt();
+        }
+             mergesortedarry(arr1,n,arr2,m);
+        
+    }
+}
+    
+    
