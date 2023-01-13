@@ -1,0 +1,8 @@
+public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+         String target = sc.nextLine();
+        int ans =str.indexOf(target);
+        System.out.println(ans);
+    }
+}
