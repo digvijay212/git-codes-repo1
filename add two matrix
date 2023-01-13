@@ -1,0 +1,37 @@
+ public static void main(String[] args) {
+          Scanner sc =new Scanner(System.in);
+        int n = sc.nextInt();//row
+        int m = sc.nextInt();//col
+        int[][] arr = new int[n][m];
+        for(int i=0; i<n;i++){
+            for(int j=0; j<m; j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+
+        int x = sc.nextInt();//row
+        int y = sc.nextInt();//col
+        int[][] brr = new int[x][y];
+        for(int i=0; i<x;i++){
+            for(int j=0; j<y; j++){
+                brr[i][j]=sc.nextInt();
+            }
+        }
+
+        boolean flag = true;
+        if(n!=x || m!=y){
+            flag=false;
+        }else{
+            for(int i=0; i<x;i++){
+            for(int j=0; j<y; j++){
+                if(arr[i][j] != brr[i][j]){
+                    flag=false;
+                }
+            }
+        }
+        }
+
+        System.out.print(flag?"Same":"Not Same");
+
+    }
+}
