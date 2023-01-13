@@ -1,0 +1,27 @@
+public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        String str = sc.next();
+        String target = sc.next();
+        
+        int i = 0;
+        int j = 0;
+        // int count = 0;
+        
+        while(i<str.length() && j<target.length()){
+            if(str.charAt(i)==target.charAt(j)){
+                i++;
+                j++;
+                
+            }
+            else 
+                j++;
+        }
+        
+        if(i==str.length())
+            System.out.print("true");
+        else
+            System.out.print("false");
+    }
+}
