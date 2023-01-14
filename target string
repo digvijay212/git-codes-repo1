@@ -1,0 +1,14 @@
+Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+             String target = sc.nextLine();
+      
+       str+=str;
+            boolean ans = str.contains(target);//contains for search in strings
+            if(ans==true){
+                System.out.print("True");
+            }
+            else{
+                System.out.println("False");
+            }
+    }
+}
